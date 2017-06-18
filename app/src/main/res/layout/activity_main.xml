@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bea.hospital.MainActivity">
+
+
+    <TextView
+        android:id="@+id/C_P_41013_text_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="C.P. 41013"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/phone954937676"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/C_P_41013_text_View"
+        android:layout_toLeftOf="@+id/C_P_41013_text_View"
+        android:layout_toStartOf="@+id/C_P_41013_text_View"
+        android:text="@string/Phone954937676"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/C_Rafael_Salgado_3_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phone954937676"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/CRafaelSalgado3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/androidhospital" />
+
+    <TextView
+        android:id="@+id/Hospital_Quiron_Sagrado_Corazon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Hospital Quirón Sagrado Corazón"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/Horario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Hospital_Quiron_Sagrado_Corazon"
+        android:layout_toLeftOf="@+id/Martes"
+        android:layout_toStartOf="@+id/Martes"
+        android:text="Horario"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/Lunes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Horario"
+        android:layout_alignBottom="@+id/Horario"
+        android:layout_alignEnd="@+id/Hospital_Quiron_Sagrado_Corazon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/Hospital_Quiron_Sagrado_Corazon"
+        android:layout_marginLeft="91dp"
+        android:layout_marginStart="91dp"
+        android:text="Lunes Abierto 24h" />
+
+    <TextView
+        android:id="@+id/Martes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Lunes"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/Lunes"
+        android:layout_below="@+id/Lunes"
+        android:text="Martes Abierto 24h" />
+
+    <TextView
+        android:id="@+id/Miércoles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Martes"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/Martes"
+        android:layout_below="@+id/Martes"
+        android:text="Miércoles Abierto 24h" />
+
+    <TextView
+        android:id="@+id/Jueves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Miércoles"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/Miércoles"
+        android:layout_below="@+id/Miércoles"
+        android:text="Jueves Abierto 24h" />
+
+    <TextView
+        android:id="@+id/Viernes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Jueves"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/Jueves"
+        android:layout_below="@+id/Jueves"
+        android:text="Viernes Abierto 24h" />
+
+    <TextView
+        android:id="@+id/Sábado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Viernes"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/Viernes"
+        android:layout_below="@+id/Viernes"
+        android:text="Sábado Abierto 24h" />
+
+    <TextView
+        android:id="@+id/Domingo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Sábado"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/Sábado"
+        android:layout_below="@+id/Sábado"
+        android:text="Domingo Abierto 24h" />
+
+    <TextView
+        android:id="@+id/Provincia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Domingo"
+        android:layout_toLeftOf="@+id/Domingo"
+        android:layout_toStartOf="@+id/Domingo"
+        android:text="Provincia"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/C_Rafael_Salgado_3_text_view"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Provincia"
+        android:text="www.quironsalud.es/sagrado-corazon"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/Sevilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Provincia"
+        android:layout_alignBottom="@+id/Provincia"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/Provincia"
+        android:text="Provincia de Sevilla" />
+
+</RelativeLayout>
